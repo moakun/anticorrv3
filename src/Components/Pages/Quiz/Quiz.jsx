@@ -117,10 +117,10 @@ function Quiz() {
                 </div>
               ))}
             </div>
-            <div className="flex justify-between w-full mt-4 text-white">
+            <div className="flex justify-around w-full mt-4 text-white">
               <button
                 onClick={handlePrevious}
-                className="w-[49%] py-3 bg-blue-500 rounded-lg font-poppins"
+                className="p-5 bg-blue-500 rounded-lg font-poppins"
               >
                 Précédent
               </button>
@@ -130,7 +130,7 @@ function Quiz() {
                     ? handleSubmitButton
                     : handleNext
                 }
-                className="w-[49%] py-3 bg-blue-500 rounded-lg font-poppins"
+                className="p-5 bg-blue-500 rounded-lg font-poppins"
               >
                 {currentQuestion + 1 === questions.length ? 'Finir' : 'Suivant'}
               </button>
